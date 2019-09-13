@@ -20,6 +20,9 @@ ul {
   display: inline-flex;
   margin: 0; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
@@ -44,7 +47,9 @@ body {
     body main header nav .bottom-header {
       padding: 20px 0; }
       body main header nav .bottom-header .logo {
-        display: inline-block; }
+        display: inline-block;
+        max-width: 250px;
+        height: 80px; }
         body main header nav .bottom-header .logo a img {
           width: 250px; }
       body main header nav .bottom-header .nav-bar {
@@ -77,7 +82,8 @@ body {
       body main header nav .bottom-header .nav-link {
         position: absolute;
         bottom: 20px;
-        right: 0px; }
+        right: 0px;
+        z-index: 9999; }
         body main header nav .bottom-header .nav-link ul .link {
           text-transform: uppercase;
           font-size: 13px; }
@@ -128,5 +134,142 @@ body {
           width: 200px;
           visibility: visible;
           margin-top: 10px; }
+  body main article section {
+    position: relative; }
+    body main article section .slide-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%; }
+      body main article section .slide-container .show-slide {
+        position: relative;
+        overflow: hidden;
+        display: flex; }
+        body main article section .slide-container .show-slide .owl-item .fade img {
+          float: left;
+          width: 100vw; }
+      body main article section .slide-container .button-click a {
+        margin: 0px 20px;
+        position: absolute;
+        top: 40%;
+        transform: translate(0 -40%); }
+        body main article section .slide-container .button-click a#right {
+          right: 0px; }
+        body main article section .slide-container .button-click a i {
+          color: white;
+          font-size: 18px;
+          padding: 20px 15px;
+          background-color: #aaa7ac82;
+          border: 1px solid #ff000000;
+          border-radius: 6px;
+          margin: 0px;
+          opacity: 0; }
+      body main article section .slide-container:hover .button-click a i {
+        opacity: 1; }
+      body main article section .slide-container .button-dot {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0px); }
+        body main article section .slide-container .button-dot .dot {
+          margin: 2px;
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background-color: #a8a4a4;
+          border: 1px solid white;
+          display: inline-block;
+          cursor: pointer; }
+        body main article section .slide-container .button-dot .pick {
+          background-color: red; }
+    body main article section .slide-sp {
+      padding: 40px 0px; }
+      body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline {
+        overflow: hidden;
+        position: relative; }
+        body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item {
+          display: flex; }
+          body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp {
+            display: block;
+            padding-left: 15px; }
+            body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item {
+              border: 1px solid #79767691;
+              position: relative;
+              text-align: left;
+              display: block; }
+              body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item {
+                position: relative;
+                display: block;
+                padding: 5px; }
+                body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .img {
+                  padding: 0px;
+                  margin: 0px; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .img img {
+                    width: 100%; }
+                body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .item-text {
+                  padding: 0px 8px;
+                  max-width: 200px; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .item-text div h4 {
+                    margin: 3px 0;
+                    color: #595959;
+                    text-transform: capitalize; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .item-text .price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; }
+                    body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .item-text .price h3 {
+                      margin: 5px 0;
+                      color: red; }
+                    body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .item-text .price span {
+                      font-size: 12px;
+                      text-decoration: line-through; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .para-item .item-text div h6 {
+                    margin: 2px 0;
+                    color: #00000063; }
+              body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .item-hover {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                background-color: #00000017;
+                width: 100%;
+                opacity: 0;
+                box-shadow: -5px 0px 8px 0px #8b8b8b; }
+                body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .item-hover .item-link {
+                  display: block;
+                  position: absolute;
+                  top: 60%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  transition: top 1s; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .item-hover .item-link a i {
+                    color: white;
+                    font-size: 20px;
+                    padding: 5px;
+                    background-color: #02020273;
+                    margin: 0px; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .item-hover .item-link a:hover i {
+                    background-color: #c79d12; }
+                body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .item-hover:hover {
+                  opacity: 1; }
+                  body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .slide-item .owl-item-sp .item .item-hover:hover .item-link {
+                    top: 50%; }
+        body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a {
+          margin: 0px 20px;
+          position: absolute;
+          top: 40%;
+          transform: translate(0 -40%); }
+          body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a#rightSP {
+            right: -8px; }
+          body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a#leftSP {
+            left: -4px; }
+          body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a i {
+            color: white;
+            font-size: 16px;
+            padding: 15px 10px;
+            background-color: #aaa7ac82;
+            border: 1px solid #ff000000;
+            margin: 0px;
+            opacity: 0; }
+        body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline:hover .button-click a i {
+          opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
