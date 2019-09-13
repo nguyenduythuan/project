@@ -270,6 +270,8 @@ body {
         }
         .slide-sp {
           padding: 40px 0px;
+          margin-left: -15px;
+          background-color: white;
           .contain {
             .global-content {
               .owl-tintuc {
@@ -400,6 +402,31 @@ body {
                     }
                   }
                 }
+              }
+            }
+          }
+        }
+      }
+      section {
+        .infor-shop {
+          background-image: url(./imgs/banner-bai-viet.jpg);
+          background-attachment: fixed;
+          padding: 40px 0px;
+          .contain {
+            .infor {
+              background-color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .img-shop {
+                width: 100%;
+                padding: 10px;
+                img {
+                  width: 100%;
+                }
+              }
+              .text-sp {
+                padding: 10px;
               }
             }
           }

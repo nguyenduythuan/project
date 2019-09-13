@@ -182,7 +182,9 @@ body {
         body main article section .slide-container .button-dot .pick {
           background-color: red; }
     body main article section .slide-sp {
-      padding: 40px 0px; }
+      padding: 40px 0px;
+      margin-left: -15px;
+      background-color: white; }
       body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline {
         overflow: hidden;
         position: relative; }
@@ -271,5 +273,21 @@ body {
             opacity: 0; }
         body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline:hover .button-click a i {
           opacity: 1; }
+  body main article section .infor-shop {
+    background-image: url(./imgs/banner-bai-viet.jpg);
+    background-attachment: fixed;
+    padding: 40px 0px; }
+    body main article section .infor-shop .contain .infor {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body main article section .infor-shop .contain .infor .img-shop {
+        width: 100%;
+        padding: 10px; }
+        body main article section .infor-shop .contain .infor .img-shop img {
+          width: 100%; }
+      body main article section .infor-shop .contain .infor .text-sp {
+        padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

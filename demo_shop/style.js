@@ -11,29 +11,30 @@ const slideSP = document.getElementsByClassName("slide-item");
 
 btnLeft.addEventListener("click", () => {
   clearTimeout(run);
-  runSlide(index > 1 ? index += -2 : img.length-1);
+  runSlide(index > 1 ? (index += -2) : img.length - 1);
 });
 
 btnRight.addEventListener("click", () => {
   clearTimeout(run);
-  runSlide(index < img.length ? index += 0 : 0);
+  runSlide(index < img.length ? (index += 0) : 0);
 });
 
 runSlide(index);
 
 window.onresize = function() {
   clearTimeout(run);
-  showSlide[0].style.width = `${(window.innerWidth)*6}px`;
+  showSlide[0].style.width = `${window.innerWidth * 6}px`;
   runSlide(index);
-}
+};
 
 function runSlide(number) {
   var s = 400;
+  var aka;
+  const size = window.innerWidth;
   showSlide[0].style.display = "flex";
-  showSlide[0].style.width = `${(window.innerWidth)*6}px`;
-  showSlide[0].style.transition = `all ${s*2}ms ease 0s`;
-  // slideSP[0].style.display = "flex";
-  slideSP[0].style.width = `${7200}px`;
+  showSlide[0].style.width = `${window.innerWidth * 6}px`;
+  showSlide[0].style.transition = `all ${s * 2}ms ease 0s`;
+  slideSP[0].style.width = `${window.innerWidth * 3.75}px`;
   slideSP[0].style.transition = `all ${s}ms ease 0s`;
   number++;
   index = number;
@@ -41,17 +42,25 @@ function runSlide(number) {
     number = 1;
     s = 1000;
   }
-  showSlide[0].style.transform = `translate(-${((window.innerWidth)*(number-1))}px, 0px)`;
-  slideSP[0].style.transform = `translate(-${(240*(number-1))}px, 0px)`;
+  for (let i = 0; i < olwItemSP.length; i++) {
+    if (size > 1215) {
+      olwItemSP[i].style.width = `${240}px`;
+      aka = 240;
+    }
+    if (size > 1215) {
+      olwItemSP[i].style.width = `${240}px`;
+      aka = 240;
+    }
+  }
+  showSlide[0].style.transform = `translate(-${window.innerWidth *
+    (number - 1)}px, 0px)`;
+  slideSP[0].style.transform = `translate(-${aka * (number - 1)}px, 0px)`;
   for (let i = 0; i < img.length; i++) {
-    olwItem[i].style.width = `${(window.innerWidth)}px`;
+    olwItem[i].style.width = `${window.innerWidth}px`;
     btDot[i].classList.remove("pick");
     btDot[i].addEventListener("click", () => clickDot(i));
   }
-  for (let i = 0; i < olwItemSP.length; i++) {
-    olwItemSP[i].style.width = "240px";
-  }
-  btDot[number-1].classList.add("pick");
+  btDot[number - 1].classList.add("pick");
   run = setTimeout(runSlide.bind(null, number), 3000);
 }
 
