@@ -1,7 +1,8 @@
 .contain {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0px 10px; }
 
 a {
   text-decoration: none;
@@ -26,7 +27,8 @@ ul {
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background-image: url(./imgs/bg_body.jpg); }
+  background-image: url(./imgs/bg_body.jpg);
+  min-width: 320px; }
   body main header .top-header {
     position: relative;
     font-size: 14px;
@@ -135,9 +137,7 @@ body {
           visibility: visible;
           margin-top: 10px; }
   body main article .owl-item-sp {
-    display: inline-block;
-    padding-left: 15px;
-    height: 336px; }
+    padding-left: 15px; }
     body main article .owl-item-sp .item {
       border: 1px solid #79767691;
       position: relative;
@@ -154,6 +154,7 @@ body {
           body main article .owl-item-sp .item .para-item .img img {
             width: 100%; }
         body main article .owl-item-sp .item .para-item .item-text {
+          position: relative;
           padding: 8px 8px;
           max-width: 200px; }
           body main article .owl-item-sp .item .para-item .item-text div {
@@ -172,9 +173,13 @@ body {
             body main article .owl-item-sp .item .para-item .item-text .price span {
               font-size: 12px;
               text-decoration: line-through; }
-          body main article .owl-item-sp .item .para-item .item-text div h6 {
-            margin: 2px 0;
-            color: #00000063; }
+          body main article .owl-item-sp .item .para-item .item-text .ma-sp {
+            position: absolute;
+            bottom: -27px;
+            margin-top: 5px; }
+            body main article .owl-item-sp .item .para-item .item-text .ma-sp h6 {
+              margin: 2px 0;
+              color: #00000063; }
       body main article .owl-item-sp .item .item-hover {
         position: absolute;
         top: 0px;
@@ -264,7 +269,7 @@ body {
           top: 40%;
           transform: translate(0 -40%); }
           body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a#rightSP {
-            right: -8px; }
+            right: -19px; }
           body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a#leftSP {
             left: -4px; }
           body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline .button-click a i {
@@ -273,10 +278,7 @@ body {
             padding: 15px 10px;
             background-color: #aaa7ac82;
             border: 1px solid #ff000000;
-            margin: 0px;
-            opacity: 0; }
-        body main article section .slide-sp .contain .global-content .owl-tintuc .owl-outline:hover .button-click a i {
-          opacity: 1; }
+            margin: 0px; }
   body main article section .infor-shop {
     background-image: url(./imgs/banner-bai-viet.jpg);
     background-attachment: fixed;
@@ -313,7 +315,9 @@ body {
         font-size: 12px; }
     body main article section .dm-sp .page-sp {
       margin-left: -15px;
-      text-align: center; }
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center; }
       body main article section .dm-sp .page-sp .owl-item-sp {
         width: 220px !important;
         padding-bottom: 15px; }
@@ -358,7 +362,8 @@ body {
     background-color: red;
     position: fixed;
     right: 10px;
-    bottom: 20px; }
+    bottom: 20px;
+    box-shadow: 0px 1px 8px 0px #00000099; }
     body main button#top:hover {
       background-color: #0f4a89; }
 
