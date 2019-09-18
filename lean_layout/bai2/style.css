@@ -1,0 +1,86 @@
+.containt {
+  max-width: 800px;
+  margin: 0px auto;
+}
+header {
+  background-color: #8f8f8f;
+  height: 50px;
+}
+header div {
+  padding-left: 10px;
+}
+header h1 {
+  margin: 0px;
+}
+menu {
+  background-color: blue;
+  margin: 0px;
+  height: 50px;
+}
+menu nav {
+  padding-top: 15px;
+}
+ul {
+  margin: 0px;
+}
+menu nav ul li {
+  list-style-type: none;
+  padding-right: 10px;
+  float: left;
+}
+menu nav ul li a {
+  color: white;
+}
+.clear {
+  clear: both;
+}
+main aside{
+  width: 250px;
+  float: left;
+}
+main aside div {
+  height: 150px;
+}
+main aside div.aside-1 {
+  background-color: yellow;
+}
+main aside div.aside-2 {
+  background-color: #8f8f8f;
+}
+main article {
+  max-width: 550px;
+  float: right;
+}
+.content-top {
+  padding: 10px;
+}
+.content-top p {
+  margin: 25px 0px;
+  text-align: justify;
+}
+div.content-bottom {
+  height: 128px;
+}
+div.content-bottom .ct-left {
+  background-color: green;
+  width: 50%; 
+  float: left;
+  height: 100%;
+}
+div.content-bottom p {
+  padding: 8px;
+}
+div.content-bottom .ct-right {
+  background-color: red;
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+footer {
+  height: 50px;
+  background-color: blue;
+  color: white;
+}
+footer div {
+  padding: 16px;
+}

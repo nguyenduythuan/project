@@ -1,0 +1,12 @@
+body {
+  font-family: 'Noto Serif', serif;
+  background-image: url(./imgs/paner.jpg);
+  background-size: 100% 100vh;
+  background-attachment: fixed; }
+  body header nav a img {
+    max-height: 70px; }
+
+input.form-control.mr-sm-2 {
+  background-color: transparent; }
+
+/*# sourceMappingURL=style.css.map */
