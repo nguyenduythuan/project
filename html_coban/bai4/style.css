@@ -1,0 +1,20 @@
+body {
+  width: 700px;
+  margin: 0px auto;
+}
+div {
+  background-image: url(./imgs/download.jpeg);
+}
+div h1 {
+  color: #008888;
+  text-align: center;
+}
+div p {
+  padding: 10px;
+  color: #008888;
+}
+div p.firt {
+  background-color: #339999;
+  color: white;
+  font-style: italic;
+}

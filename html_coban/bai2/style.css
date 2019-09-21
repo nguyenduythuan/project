@@ -1,0 +1,28 @@
+h1 {
+  color: green;
+}
+h3 {
+  color: blue;
+  text-decoration: underline;
+}
+h1.tieu-de {
+  background-color: pink;
+  color: #ec3656;
+  text-align: center;
+  text-transform: uppercase;
+}
+div {
+  background-color: #efefba;
+}
+p {
+  text-align: center;
+}
+p.text-1 {
+  color: blue;
+}
+p.text-2 {
+  color: red;
+}
+p.text-3 {
+  color: green;
+}

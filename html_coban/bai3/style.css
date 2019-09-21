@@ -1,0 +1,22 @@
+body {
+
+}
+div {
+  position: relative;
+  background-color: #a06d21;
+  color: #ffffff;
+  width: 700px;
+  margin: 0px auto;
+  padding: 10px 20px 50px 20px;
+}
+div h1 {
+  text-align: center;
+  color: #ffcc00;
+}
+div p {
+  background-image: url(./imgs/download.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 100px;
+}

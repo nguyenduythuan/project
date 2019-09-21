@@ -1,0 +1,23 @@
+body {
+  max-width: 700px;
+  text-align: 0px -webkit-auto;
+  margin: 0px auto;
+  padding: 10px;
+}
+h1 {
+  color: green;
+  text-align: center;
+}
+span {
+  color: red;
+}
+div.code {
+  background-color: #cccccc;
+  color: #0000cc;
+}
+div.code p.left {
+  padding-left: 200px;
+}
+div.code p.center {
+  text-align: center;
+}
