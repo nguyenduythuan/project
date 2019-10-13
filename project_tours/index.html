@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Traval</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <div class="top-header">
+        <div class="wapper-contaner">
+          <div class="header-top">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-phone" aria-hidden="true"></i>+0971717192</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            <div class="header-right">
+              <a href="#">Đăng nhập</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <menu class="wapper-contaner">
+        <nav class="header-top">
+          <ul>
+            <li class="root-link">
+              <img class="bg-left" src="./images/hoa_so_top.png" />
+              <a href="#">Trang chủ </a>
+              <img class="bg-right" src="./images/hoaso_bottom.png" />
+            </li>
+            <li class="root-link">
+              <img class="bg-left" src="./images/hoa_so_top.png" />
+              <a href="#">Tours </a>
+              <img class="bg-right" src="./images/hoaso_bottom.png" />
+            </li>
+            <li class="root-link">
+              <img class="bg-left" src="./images/hoa_so_top.png" />
+              <a href="#">Tự thiết kê </a>
+              <img class="bg-right" src="./images/hoaso_bottom.png" />
+            </li>
+            <li class="logo">
+              <a href="#"><img src="./images/logo.png" alt=""/></a>
+            </li>
+            <li class="root-link">
+              <img class="bg-left" src="./images/hoa_so_top.png" />
+              <a href="#">Tin tức </a>
+              <img class="bg-right" src="./images/hoaso_bottom.png" />
+            </li>
+            <li class="root-link">
+              <img class="bg-left" src="./images/hoa_so_top.png" />
+              <a href="#">Sự kiện </a>
+              <img class="bg-right" src="./images/hoaso_bottom.png" />
+            </li>
+            <li class="root-link">
+              <img class="bg-left" src="./images/hoa_so_top.png" />
+              <a href="#">Tài khoản </a>
+              <img class="bg-right" src="./images/hoaso_bottom.png" />
+            </li>
+          </ul>
+        </nav>
+      </menu>
+    </header>
+    <main>
+      <section class="slider-wrapper">
+        <div class="slide-contols" id="playSlide">
+          <figure>
+            <img src="./images/play.png" alt="play" />
+          </figure>
+        </div>
+        <div class="slide-video">
+          <video id="videoBaner" poster="./images/bg_2.png">
+            <source src="./images/baner_demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="infor-contact">
+        <div class="infor-wapper">
+          <div class="header-link">
+            <ul class="infor-table">
+              <li class="infor-item firt-list">
+                <a class="infor-link action" href="#khachsan">
+                  <img src="./images/icon-ks.png" alt="ks" />
+                  Khách sạn
+                </a>
+              </li>
+              <li class="infor-item">
+                <a class="infor-link" href="#tours">
+                  <img src="./images/icon_nguoi.png" alt="tours" />
+                  Tours
+                </a>
+              </li>
+              <li class="infor-item">
+                <a class="infor-link" href="#check">
+                  <img src="./images/icon_ve.png" alt="ve" />
+                  Đặt vé
+                </a>
+              </li>
+              <li class="infor-item last-list">
+                <a class="infor-link" href="#thue">
+                  <img src="./images/icon_car.png" alt="car" />
+                  Thuê xe
+                </a>
+              </li>
+            </ul>
+          </div>
+          <section class="wapper">
+            <section id="khachsan" class="infor-content show  ">
+              <h1>Tìm <span class="title-item">Khách Sạn</span></h1>
+              <form action="post">
+                <select name="address" id="address">
+                  <option>Địa điểm ?</option>
+                  <option value="danang">Thành phố Đà Nẵng</option>
+                  <option value="hue">Thành phố Huế </option>
+                  <option value="hoian">Thành phố Hội An</option>
+                </select>
+                <input
+                  type="date"
+                  name="timein"
+                  id="timein"
+                  placeholder="Thời gian đi ?"
+                />
+                <input
+                  type="date"
+                  name="timeout"
+                  id="timeout"
+                  placeholder="Thời gian khứ hồi ?"
+                />
+                <input type="text" name="moneny" placeholder="Giá tiền ?" />
+                <input type="submit" value="Tìm kiếm" id="search" />
+              </form>
+            </section>
+
+            <section id="tours" class="infor-content">
+              <h1>Tìm <span class="title-item">Tua Du Lịch</span></h1>
+              <form action="post">
+                <select name="address" id="address">
+                  <option>Địa điểm ?</option>
+                  <option value="danang">Thành phố Đà Nẵng</option>
+                  <option value="hue">Thành phố Huế </option>
+                  <option value="hoian">Thành phố Hội An</option>
+                </select>
+                <input
+                  type="date"
+                  name="timein"
+                  id="timein"
+                  placeholder="Thời gian đi ?"
+                />
+                <input
+                  type="date"
+                  name="timeout"
+                  id="timeout"
+                  placeholder="Thời gian khứ hồi ?"
+                />
+                <input type="text" name="moneny" placeholder="Giá tiền ?" />
+                <input type="submit" value="Tìm kiếm" id="search" />
+              </form>
+            </section>
+
+            <section id="check" class="infor-content">
+              <h1>Tiến Hành <span class="title-item">Đặt Vé</span></h1>
+              <form action="post">
+                <select name="address" id="address">
+                  <option>Địa điểm ?</option>
+                  <option value="danang">Thành phố Đà Nẵng</option>
+                  <option value="hue">Thành phố Huế </option>
+                  <option value="hoian">Thành phố Hội An</option>
+                </select>
+                <input
+                  type="date"
+                  name="timein"
+                  id="timein"
+                  placeholder="Thời gian đi ?"
+                />
+                <input
+                  type="date"
+                  name="timeout"
+                  id="timeout"
+                  placeholder="Thời gian khứ hồi ?"
+                />
+                <input type="text" name="moneny" placeholder="Giá tiền ?" />
+                <input type="submit" value="Tìm kiếm" id="search" />
+              </form>
+            </section>
+
+            <section id="thue" class="infor-content">
+              <h1>Tiến Hành <span class="title-item">Thuê Xe</span></h1>
+              <form action="post">
+                <select name="address" id="address">
+                  <option>Địa điểm ?</option>
+                  <option value="danang">Thành phố Đà Nẵng</option>
+                  <option value="hue">Thành phố Huế </option>
+                  <option value="hoian">Thành phố Hội An</option>
+                </select>
+                <input
+                  type="date"
+                  name="timein"
+                  id="timein"
+                  placeholder="Thời gian đi ?"
+                />
+                <input
+                  type="date"
+                  name="timeout"
+                  id="timeout"
+                  placeholder="Thời gian khứ hồi ?"
+                />
+                <input type="text" name="moneny" placeholder="Giá tiền ?" />
+                <input type="submit" value="Tìm kiếm" id="search" />
+              </form>
+            </section>
+          </section>
+          <div class="bottom-link"></div>
+        </div>
+      </section>
+
+      <section class="infor-we wapper-contaner">
+        <div class="div-header">
+          <h1>
+            Tại Sao <span class="title-item header-we">Chọn Chúng Tôi</span>
+          </h1>
+          <p>
+            Quay về truyền thống, tinh hoa dân tộc, chúng tôi <br />
+            đưa đến bạn những trải nghiệm chân thật nhất của văn hoá người Việt.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <section>
+            <div class="header-conten">
+              <h2>10 năm <span class="header-we">kinh nghiệm</span></h2>
+              <img src="./images/icon_kn.png" alt="icon" />
+            </div>
+            <p>Kinh nghiệm của mình, chúng tôi tự tin phục vụ quý khách.</p>
+            <p>Thực hiện hơn 2356 tours</p>
+            <p>
+              Nhận được nhiều ý kiến phản hồi tốt của khách hàng trong chuyến.
+            </p>
+            <p>Hơn 2036 nhà đồng hành cùng</p>
+            <div class="view-info"><a href="#">XEM THÊM</a></div>
+          </section>
+
+          <section>
+            <div class="header-conten">
+              <h2>Cập nhật <span class="header-we">sự kiện</span></h2>
+              <img src="./images/icon_sukien.png" alt="icon" />
+            </div>
+            <p>Kinh nghiệm của mình, chúng tôi tự tin phục vụ quý khách.</p>
+            <p>Thực hiện hơn 2356 tours</p>
+            <p>
+              Nhận được nhiều ý kiến phản hồi tốt của khách hàng trong chuyến.
+            </p>
+            <p>Hơn 2036 nhà đồng hành cùng</p>
+            <div class="view-info"><a href="#">XEM THÊM</a></div>
+          </section>
+
+          <section>
+            <div class="header-conten">
+              <h2>Chủ động <span class="header-we">thiết kế tour</span></h2>
+              <img src="./images/icon_chudong.png" alt="icon" />
+            </div>
+            <p>Kinh nghiệm của mình, chúng tôi tự tin phục vụ quý khách.</p>
+            <p>Thực hiện hơn 2356 tours</p>
+            <p>
+              Nhận được nhiều ý kiến phản hồi tốt của khách hàng trong chuyến.
+            </p>
+            <p>Hơn 2036 nhà đồng hành cùng</p>
+            <div class="view-info"><a href="#">XEM THÊM</a></div>
+          </section>
+
+          <section>
+            <div class="header-conten">
+              <h2>tiết kiệm <span class="header-we">tối đa</span></h2>
+              <img src="./images/icon_tiet_kiem.png" alt="icon" />
+            </div>
+            <p>Kinh nghiệm của mình, chúng tôi tự tin phục vụ quý khách.</p>
+            <p>Thực hiện hơn 2356 tours</p>
+            <p>
+              Nhận được nhiều ý kiến phản hồi tốt của khách hàng trong chuyến.
+            </p>
+            <p>Hơn 2036 nhà đồng hành cùng</p>
+            <div class="view-info"><a href="#">XEM THÊM</a></div>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <div class="tow-check">
+          <section class="wapper-contaner content">
+            <h1>2 Sự lựa chọn <span class="title-item">cho bạn</span></h1>
+            <p>
+              Chúng ta có tours sẵn hoặc bạn có thể thiết kế cho mình một tour
+              theo ý của bạn.
+            </p>
+            <div class="grid-content">
+              <div class="wow item-left">
+                <a href="#"
+                  ><img
+                    data-wow-duration="2s"
+                    class="wow bounceInLeft"
+                    src="./images/tours.png"
+                    alt="tours img"
+                /></a>
+              </div>
+              <div class="wow item-right">
+                <a href="#"
+                  ><img
+                    data-wow-duration="2s"
+                    class="wow bounceInRight"
+                    src="./images/tours_2.png"
+                    alt="tours img"
+                /></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="wapper-contaner section-view">
+        <div class="div-header">
+          <h1>Cảnh sắc <span class="title-item header-we">miền trung</span></h1>
+          <p>
+            Chúng tôi xin giới thiệu khách hàng yêu quý của mình các địa điểm du
+            lịch đậm chất dân tộc Việt Nam<br />
+            Để có thể cảm nhận rõ hơn, mời các bạn thăm địa điểm của TRUNGVIVU.
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="item-left item">
+            <div class="item-img">
+              <a href="#" class="wow bounceInLeft" data-wow-duration="3s">
+                <img
+                  data-wow-duration="4s"
+                  class="wow rotateIn"
+                  src="./images/nng1.png"
+                  alt="da nang"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="item-center item">
+            <div class="item-img">
+              <a href="#" class="wow bounceInLeft" data-wow-duration="3s">
+                <img
+                  data-wow-duration="4s"
+                  class="wow rotateIn"
+                  src="./images/hian1.png"
+                  alt="hoi an"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="item-right item">
+            <div class="item-img">
+              <a href="#" class="wow bounceInLeft" data-wow-duration="3s">
+                <img
+                  data-wow-duration="4s"
+                  class="wow rotateIn"
+                  src="./images/hu1.png"
+                  alt="hue"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wapper-contaner section-view">
+          <div class="div-header">
+            <h1>
+              Thành tích <span class="title-item header-we">hơn 5 năm qua</span>
+            </h1>
+            <p>
+              Cảm ơn quý khách hàng đã luôn đồng hành cung TRUNGVIVU để thực
+              hiện những chuyến tour du lịch nhiều kỉ nhiệm và thành công.Chúng
+              tôi sẽ luôn ở đây để phục vụ quý khách.
+            </p>
+          </div>
+        </div>
+        <div class="bg-ful">
+          <div class="grid-item wapper-contaner">
+            <div class="center">
+              <div class="item-gr wow bounceInLeft">
+                <div class="content-item">
+                  2356
+                </div>
+                <p class="tour-text">Số tours đã thực hiện</p>
+              </div>
+            </div>
+            <div class="center">
+              <div class="item-gr wow bounceInDown">
+                <div class="content-item">
+                  52
+                </div>
+                <p class="tour-text">Giải thưởng tour uy tín, chất lượng.</p>
+              </div>
+            </div>
+            <div class="center">
+              <div class="item-gr wow bounceInRight">
+                <div class="content-item">
+                  18733
+                </div>
+                <p class="tour-text">Lượt truy cập</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wapper-contaner section-view">
+          <div class="div-header">
+            <h1>
+              Hoạt động
+              <span class="title-item header-we">trong tour</span>
+            </h1>
+            <p>
+              Chúng tôi xin gửi đến quý khách hàng những hoạt động có trong tour
+              của mình .Để khách hàng có thể tự mình trải nghiệm những ngành
+              nghề truyền thống của dân Viết, hay những hoạt động ở thành phố
+              của ta.
+            </p>
+          </div>
+        </div>
+        <div class="view-all">
+          <div class="continer item-beach">
+            <div class="item">
+              <p class="title wow fadeInDown">BIỂN GHỀNH BÀNG</p>
+              <div class="info-item wow fadeInDown">
+                <a href="#" class="title">THẾ GIỚI ĐẠI DƯƠNG</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="continer item-light">
+            <div class="item">
+              <p class="title wow fadeInDown">NGHỆ THUẬT CỔ XƯA</p>
+              <div class="info-item wow fadeInDown">
+                <a href="#" class="title">TRẢI PHỐ CỔ ĐÈN LỒNG</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="continer item-led">
+            <div class="item">
+              <p class="title wow fadeInDown">THÀNH PHỐ HỘI NHẬP</p>
+              <div class="info-item wow fadeInDown">
+                <a href="#" class="title">HOÀ THANH ÁNH SÁNG</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="continer item-gom">
+            <div class="item">
+              <p class="title wow fadeInDown">NGHỆ THUẬT GIA TRUYỀN</p>
+              <div class="info-item wow fadeInDown">
+                <a href="#" class="title">KHÁM PHÁ LÀNG GỐM LÂU ĐỜI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wapper-contaner section-view">
+          <div class="div-header">
+            <h1>
+              Sự kiện lớn
+              <span class="title-item header-we">năm 2017</span>
+            </h1>
+            <p>
+              Chúng tôi xin gửi đến quý khách hàng những hoạt động có trong tour
+              của mình .Để khách hàng có thể tự mình trải nghiệm những ngành
+              nghề truyền thống của dân Viết, hay những hoạt động ở thành phố
+              của ta.
+            </p>
+          </div>
+        </div>
+        <div class="item-year">
+          <div class="hover left">
+            <div class="content-year wow">
+              <img src="./images/tiktok.png" alt="logo 2" />
+              <h2>COCOFEST <span class="title-item">ĐÀ NẴNG</span></h2>
+              <div class="text-content">
+                <p>
+                  Với sự góp mặt với cảu hươn 50 ca nhạc sĩ 15
+                  <br />
+                  nhóm nhạc và 6 nhóm nhảy.
+                </p>
+                <p>
+                  Bạn sẽ không thể bỏ lỡ lễ hội lớn nhất này chắc chắn nó sẽ
+                  <br />
+                  mang đến cho bạn những điều không thể quên.
+                </p>
+              </div>
+              <p class="time">Thời gian: 02/09/2017</p>
+              <p class="time">Địa điểm: Sông Hàn</p>
+            </div>
+          </div>
+
+          <div class="hover center">
+            <div class="content-year wow">
+              <img src="./images/tiktok.png" alt="logo 2" />
+              <h2>COCOFEST <span class="title-item">ĐÀ NẴNG</span></h2>
+              <div class="text-content">
+                <p>
+                  Với sự góp mặt với cảu hươn 50 ca nhạc sĩ 15
+                  <br />
+                  nhóm nhạc và 6 nhóm nhảy.
+                </p>
+                <p>
+                  Bạn sẽ không thể bỏ lỡ lễ hội lớn nhất này chắc chắn nó sẽ
+                  <br />
+                  mang đến cho bạn những điều không thể quên.
+                </p>
+              </div>
+              <p class="time">Thời gian: 02/09/2017</p>
+              <p class="time">Địa điểm: Sông Hàn</p>
+            </div>
+          </div>
+
+          <div class="hover right">
+            <div class="content-year wow">
+              <img src="./images/tiktok.png" alt="logo 2" />
+              <h2>COCOFEST <span class="title-item">ĐÀ NẴNG</span></h2>
+              <div class="text-content">
+                <p>
+                  Với sự góp mặt với cảu hươn 50 ca nhạc sĩ 15
+                  <br />
+                  nhóm nhạc và 6 nhóm nhảy.
+                </p>
+                <p>
+                  Bạn sẽ không thể bỏ lỡ lễ hội lớn nhất này chắc chắn nó sẽ
+                  <br />
+                  mang đến cho bạn những điều không thể quên.
+                </p>
+              </div>
+              <p class="time">Thời gian: 02/09/2017</p>
+              <p class="time">Địa điểm: Sông Hàn</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="logo"><img src="./images/logo.png" alt="" /></div>
+      <div class="wapper-contaner footer-grid">
+        <div>
+          <ul>
+            <li><a href="#">344 Thành Thái, Quận 10, Tp HCM</a></li>
+            <li><a href="#">0971717192 - 0987654321</a></li>
+            <li><a href="#">trungvivu.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Thành Phố Huế</a></li>
+            <li><a href="#">Thành Phố Đà Nẵng</a></li>
+            <li><a href="#">Phố Cổ Hội An</a></li>
+          </ul>
+        </div>
+        <div>
+          <iframe
+            width="300"
+            height="300"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="demo">
+      </div>
+    </footer>
+
+    <button id="top">
+      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </button>
+    <script src="./index.js" async defer></script>
+  </body>
+</html>

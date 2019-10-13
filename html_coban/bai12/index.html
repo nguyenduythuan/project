@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>bai</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="container">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <h2>Phieu dang ky tham gia chuong trinh khuyen mai</h2>
+    <form action="post" onsubmit="return validateForm();">
+      <table>
+        <tbody>
+          <tr>
+            <td>Ho va ten</td>
+            <td><input type="text" name="ten" id="ten" value="Nguyen Ngoc Quynh Nga"/></td>
+          </tr>
+          <tr>
+            <td>Dia chi</td>
+            <td><input type="text" name="address" id="add" value="2Bia Hung Vuong, Q10"/></td>
+          </tr>
+          <tr>
+            <td>Dien thoai</td>
+            <td><input type="text" name="phone" id="phone" value="0999999999"/></td>
+          </tr>
+          <tr>
+            <td>Phai</td>
+            <td>
+                <input type="radio" name="gender" value="nam" checked/><label for="gender"
+                  >Nam
+                </label>
+                <input type="radio" name="gender" value="nu" /><label for="gender"
+                  >Nu
+                </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Nghe nghiep</td>
+            <td>
+              <select name="nghe" id="nghe">
+                <option value="bs">Bac si</option>
+                <option value="ks">Ky su</option>
+                <option value="gv">Giao vien</option>
+                <option value="k">Khac</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Chon san pham tham gia</td>
+            <td>
+              <select name="sanpham" id="sanpham" multiple>
+                <option value="kem">Kem danh rang </option>
+                <option value="bot">Bot giat </option>
+                <option value="dau">Dau goi dau </option>
+                <option value="sua">Sua tam </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>So nguoi du doan tham gia</td>
+            <td><input type="text" name="number" id="number" value="250000"/></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="btn"><button type="submit" >Dong y</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <script src="./style.js" async defer></script>
+  </body>
+</html>

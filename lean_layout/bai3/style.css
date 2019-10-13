@@ -1,0 +1,60 @@
+body.container {
+    max-width: 720px;
+    margin: 0px auto;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+main {
+    position: relative;
+    background-color: aliceblue;
+}
+h1, h2, h3 {
+    margin: 0px;
+}
+aside {
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 170px;
+    float: left;
+    background-color: #a1b7c5;
+    height: 100vh;
+    margin-right: 0px;
+}
+article {
+    margin-left: 180px;
+}
+article hr {
+    margin-left: 20px;
+}
+article section {
+    padding: 20px 10px;
+}
+article section p {
+    padding-left: 10px;
+    text-align: justify;
+}
+footer {
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0px;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+footer ul li a {
+    color: white;
+}
+footer ul li:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}

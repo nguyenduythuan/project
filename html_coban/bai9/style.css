@@ -1,0 +1,26 @@
+.container {
+    max-width: 700px;
+    margin: 0px auto;
+}
+table, th, tr, td {
+    border: 1px solid rgb(255, 102, 0);
+    border-collapse: collapse;
+}
+h1 {
+    color: red;
+    text-align: center
+}
+table {
+    width: 100%;
+}
+table thead {
+    color: white;
+    background-color: red;
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+td.none {
+    text-align: left;
+}

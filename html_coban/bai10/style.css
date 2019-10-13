@@ -1,0 +1,36 @@
+.container {
+    max-width: 700px;
+    margin: 0px auto;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #ff0000;
+    border-collapse: collapse;
+}
+table thead tr:nth-child(1) th:nth-child(1) {
+    background-color:red;
+    text-align: right;
+    color: white;
+    padding: 5px;
+}
+table thead tr:nth-child(3) th {
+    background-color: #ffbbbb;
+    color: #ff0000;
+    font-size: 30px;
+    padding: 5px;
+}
+table tbody td > ul:nth-child(n) {
+    list-style-type: square;
+}
+table tbody td > ul:nth-child(n) > li {
+    color: #ff0000;
+    font-weight: bold;
+}
+table tbody td > ul:nth-child(n) > li ul li, ol li {
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 100;
+}

@@ -1,0 +1,26 @@
+.container {
+  max-width: 300px;
+  margin: 0px auto;
+  box-shadow: 3px 3px 10px 1px #a2a0a0;
+  padding: 10px;
+}
+input {
+  width: 98%;
+}
+h3 {
+  text-align: center;
+  color: rgb(202, 133, 4);
+}
+table {
+  width: 100%;
+  background-color: aqua;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table tbody tr:nth-child(3) td {
+  text-align: center;
+}

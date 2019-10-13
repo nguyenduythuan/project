@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>bai</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="container">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <h1>Dang ky du lich</h1>
+    <form action="post" onsubmit="return validateForm();">
+      <table>
+        <tbody>
+          <tr>
+            <td>Ho va ten</td>
+            <td>
+              <input
+                type="text"
+                name="ten"
+                id="ten"
+                value="Nguyen Ngoc Quynh Nga"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Dia chi</td>
+            <td>
+              <input
+                type="text"
+                name="address"
+                id="add"
+                value="2Bia Hung Vuong, Q10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Dien thoai</td>
+            <td>
+              <input type="text" name="phone" id="phone" value="0999999999" />
+            </td>
+          </tr>
+          <tr>
+            <td>Khach Viet Nam</td>
+            <td><input type="checkbox" checked /></td>
+          </tr>
+          <tr>
+            <td>Chon tour</td>
+            <td>
+              <select name="tour">
+                <optgroup label="Mien Bac"
+                  ><option>Ha Noi - Ha Long - Sapa</option>
+                  <option>Ha Noi - Ha Long - Sapa</option>
+                  <option>Ha Noi - Ha Long - Sapa</option></optgroup
+                >
+                <optgroup label="Mien Trung">
+                  <option>Hue - Bach Ma - Da Nang</option>
+                  <option>Nha Trang - Da Lat</option>
+                  <option>Buon me thuot - Gia Lai - kontum</option>
+                </optgroup>
+                <optgroup label="Mien Nam"
+                  ><option value="">TP.HCM - Can Tho - Ca Mau</option>
+                  <option value="">TP.HCM - My Tho</option></optgroup
+                >
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Phuong tien</td>
+            <td>
+              <input type="radio" name="may" value="mb" checked /><label
+                for="gender"
+                >May bay
+              </label>
+              <input type="radio" name="may" value="oto" /><label for="gender"
+                >Xe o to
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+                <div class="slk">
+                    <label for="nguoi">Nguoi lon</label>
+                    <input type="text" name="nguoi">
+                    <label for="chil">Tre em</label>
+                    <input type="text" name="chil">
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <td> Ghi chu them </td>
+            <td>
+              <textarea name="note" cols="30" rows="2"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="btn">
+              <button type="submit">Dong y</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <script src="./style.js" async defer></script>
+  </body>
+</html>

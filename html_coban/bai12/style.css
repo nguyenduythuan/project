@@ -1,0 +1,28 @@
+.container {
+  margin: 0px auto;
+  margin-top: 100px;
+  max-width: 700px;
+  box-shadow: 3px 3px 10px 1px #a2a0a0;
+  padding: 10px;
+}
+h2 {
+  color: green;
+  text-align: center;
+}
+table {
+  width: 100%;
+  background-color: aquamarine;
+  color: green;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table td {
+  padding: 5px;
+}
+table td.btn {
+  text-align: center;
+}

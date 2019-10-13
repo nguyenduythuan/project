@@ -1,0 +1,38 @@
+.container {
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: #ffedca;
+}
+aside {
+    float: left;
+}
+img {
+    max-width: 150px;
+}
+article {
+    display: inline-block;
+    width: 70%;
+    margin-left: 20px;
+}
+table, tr, td, th {
+    border: 1px solid rgb(192, 8, 220);
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+}
+caption {
+    font-size: 30px;
+    color: #cc6600;
+    font-weight: bold;
+}
+table thead {
+    color: white;
+    background-color: orange;
+}
+table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+table tbody tr:nth-child(even) {
+    background-color: #ffedca;
+}

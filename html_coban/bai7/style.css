@@ -1,0 +1,33 @@
+.container {
+    max-width: 700px;
+    margin: 0px auto;
+}
+header h1 {
+    color: rgb(236, 56, 206);
+    text-align: center;
+}
+aside {
+    max-width: 200px;
+    float: left;
+}
+article {
+    display: inline-block;
+}
+footer {
+    display: inline-block;
+}
+.no-style {
+    list-style-type: none;
+    margin: 20px 0px;
+}
+ul.info {
+    list-style-type: square;
+}
+
+footer h4 {
+    background-color: pink;
+}
+mark {
+    background-color: rgba(236, 56, 206, 0.664);
+    color: white;
+}
